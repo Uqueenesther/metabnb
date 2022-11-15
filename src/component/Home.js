@@ -1,7 +1,7 @@
 import "../App.scss";
 import { Link } from 'react-router-dom';
 
-function Home(){
+function Home( {setShowBox,  handleshowbox}){
     return(
         <div className="container">
             <header className="header">
@@ -14,7 +14,10 @@ function Home(){
                      <li className="nav__item"><Link to="/signup" className='nav__link '>Place to stay</Link></li>
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">NFTs</a></li>
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">Community</a></li>
-                     <button className=' nav__btn'>Connect Wallet</button>
+
+                     <button  onClick={handleshowbox}
+                     className=' nav__btn'>Connect Wallet</button>
+                    {/* onClick={()=> setShowBox(true) }  */}
                 </ul>
               </div>
 
