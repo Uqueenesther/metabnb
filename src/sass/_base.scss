@@ -1,0 +1,24 @@
+$color-primary:linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);;
+$color-primary-2:#fdf6eb;
+$color-secondary: #A02279;
+$border:#0000;
+$font-primary:Red Rose, "sans-serif";
+$font-secondary: Red Rose "sans-serif";
+$font-primary:2rem;
+
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: $color-primary;
+    font-family:Red Rose;
+    font-weight: 400;
+    font-size:$font-primary; 
+    line-height: 3rem; 
+
+}
+
