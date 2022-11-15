@@ -2,7 +2,7 @@ import "../App.scss";
 
 function Modal(setShowBox, showBox){
       return(
-        <div className="hide-container">
+        <div className={`${!showBox ? 'hide-container': ""}`}>
           <div className="modal">
             <div className="modal__outline">
                 <div className="modal__header">
