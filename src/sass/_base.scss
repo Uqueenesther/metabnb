@@ -8,9 +8,12 @@ $font-primary:1.3rem;
 
 $bp-large: 68.75em;  
 // 1100px  
-$bp-small: 56.25;  
+$bp-small: 56.25em;  
 // 900px  
-
+$bp-tab: 50em;
+// 800px
+$bp-tab1: 46.875em;
+// 750
 
 html{
     box-sizing: border-box;
@@ -20,9 +23,17 @@ html{
         font-size: 45%;
    }
 
-   
-   @media only screen and (max-width:$bp-large){
+   @media only screen and (max-width:$bp-small){
     font-size: 40%;
+  
+}
+ 
+@media only screen and (max-width:$bp-tab){
+    font-size: 37%;
+}
+
+@media only screen and (max-width:$bp-tab1){
+    font-size: 39%;
 }
    
 }

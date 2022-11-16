@@ -12,9 +12,9 @@ function Home (){
             <header className="header">
               <div className="nav"> 
                 <ul className="nav__list">
-                 <figure className="image1" ><img src="img/logoicon.png" alt="logoicon" className="logoicon"/>
-                 <img src="img/logo.png" alt="logo" className="logo"/>
-                 </figure> 
+                 <div className="image1" ><img src="img/logoicon.png" alt="logoicon" className="logoicon"/>
+                  <img src="img/logo.png" alt="logo" className="logo"/>
+                 </div> 
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">Home</a></li>
                      <li className="nav__item"><Link to="/signup" className='nav__link '>Place to stay</Link></li>
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">NFTs</a></li>
@@ -44,14 +44,14 @@ function Home (){
                    <figure className="intro__image intro__item-2"><img src="img/image 4.png" alt="pic" className="intro__image"/></figure>
                    <figure className="intro__image intro__item-3"><img src="img/image 5.png" alt="pic" className="intro__image"/></figure>
                    <figure className="intro__image intro__item-4"><img src="img/image 6.png" alt="pic" className="intro__image"/></figure> 
-             
+                   <img src="img/"/>
               </section>
             </header>
 
             <div className="purple__frame">
-             <img src="img/mbtoken2.png" alt="mbtoken"/>
-             <img src="img/metamask.png" alt="metamask"/>
-             <img src="img/Frame 4041.png" alt="openair"/>
+             <img src="img/mbtoken2.png" alt="mbtoken" className="purple_img"/>
+             <img src="img/metamask.png" alt="metamask"  className="purple_img"/>
+             <img src="img/Frame 4041.png" alt="openair"  className="purple_img"/>
             </div>
            
             <section  className="inspo">

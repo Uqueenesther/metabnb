@@ -4,6 +4,19 @@
        margin-top:8rem;
  }
 }
+.logoicon{
+   @media only screen and (max-width:$bp-tab1){
+     width: 4rem;
+     height: 4rem;
+} 
+}
+
+.logo{
+   @media only screen and (max-width:$bp-tab1){
+      width: 15rem;
+    
+ } 
+}
 
 .nav{
     grid-column: 1/ -1;
@@ -16,7 +29,23 @@
             justify-content: space-around;
              list-style: none;
              padding: 0px;
-            
+
+             @media only screen and (max-width:$bp-tab){
+               display: flex;
+               float: left;
+               gap:2rem;
+         }
+         margin-top: 3rem;
+        @media only screen and (max-width:$bp-tab1){
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+            gap: 3rem;
+          list-style: none;
+   
+          font-size: 2rem;
+          
+      }
     }
 
     &__link{
@@ -45,7 +74,7 @@
     @media only screen and (max-width:$bp-large){
       font-size: 1.5rem;
  }
-      @media only screen and (max-width:$bp-large){
+      @media only screen and (max-width:$bp-small){
          width: 18rem;
          font-size: 1.3rem;
       }
@@ -66,6 +95,9 @@
 
 .image1{
    grid-column: 2/ sapn 2;
+   @media only screen and (max-width:$bp-tab){
+     margin: 0px;
+   }
 }
 .intro{
    margin-top: 10rem;
@@ -74,11 +106,21 @@
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(9, 6rem) ;
     grid-gap:1.5rem;
+
+    margin-top: 3rem;
+   @media only screen and (max-width:$bp-tab1){
+       margin-top:4rem;
+ }
     
    
 }
 .intro__text{
    grid-column: 1/ span 5; 
+   
+   @media only screen and (max-width:$bp-tab1){
+       margin-top: 0px;
+       grid-row: 1/ span 3;
+ }
   
    
    
@@ -171,7 +213,15 @@
     color: #fff;
     height: 8rem;
     cursor: pointer;
+
    }
+
+.purple_img{
+   @media only screen and (max-width:$bp-small){
+      width: 20rem;
+      
+ }
+ }
 
  .inspo-h1{
    text-align: center;
@@ -188,9 +238,12 @@
    padding: 2rem;
    border-radius:2rem ;
 
-   @media only screen and (max-width:$bp-large){
+   @media only screen and (max-width:$bp-small){
       max-width: 16%;
  }
+   @media only screen and (max-width:$bp-tab1){
+      max-width: 35%;
+   }
  }
 
  .frame-text{
@@ -229,6 +282,10 @@
       font-size: 3rem;
       line-height: 4rem;
       letter-spacing: 2px;
+      @media only screen and (max-width:$bp-tab1){
+         font-size: 2rem;
+       
+    }
    }
 
    &__img{
@@ -260,6 +317,7 @@
    align-items: center;
 
    &__sub{
+
       margin-right: 1rem;
    }
    
@@ -285,7 +343,7 @@
       justify-content: space-between;
       cursor: pointer;
 
-      @media only screen and (max-width:$bp-large){
+      @media only screen and (max-width:$bp-small){
          display: block;
          margin-top: 5px;
          margin-bottom: 0px;
@@ -297,6 +355,12 @@
 
 .para2{
    font-size: 1.8rem;
+}
+
+.footer__logo{
+   @media only screen and (max-width:$bp-small){
+  width: 15rem;    
+ }
 }
 
 // ////////////////////////////////PLACES
