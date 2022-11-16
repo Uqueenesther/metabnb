@@ -223,7 +223,7 @@ function Home (){
             <div className=" product">
                <div className="product__text">
                <h1>Metabnb NFTs</h1>
-               <p>Discover our NFT gifts cards collection. Loyal customers gets amazing gift cards which are traded as NFTs gives our customer access to loads of our exclusive services </p>
+               <p className="para2">Discover our NFT gifts cards collection. Loyal customers gets amazing gift cards which are traded as NFTs gives our customer access to loads of our exclusive services </p>
 
                <button className="product__btn">learn more </button>
                </div>
