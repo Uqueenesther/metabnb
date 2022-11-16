@@ -539,7 +539,7 @@
    
       }
 
-       &__input{ 
+       &__metamask{ 
          // background-image: url("../../public/img/image\ 69.png"); 
          background-repeat: no-repeat;
          width: 97%;
@@ -555,7 +555,7 @@
          padding: 1rem;  
      }
 
-     &__input1{ 
+     &__wallet{ 
       // background-image: url("../../public/img/image\ 66.png");
       background-repeat: no-repeat;
       width: 97%;
@@ -566,10 +566,10 @@
       font: var(--font-colour);
       font-size: x-large;
       margin: 10px auto 1px;
-      display: block;
       outline: none;
       padding: 1rem;
       position: relative;
+     
            
   }
  }
