@@ -237,9 +237,9 @@ function Home (){
             <div className="footer__contact" >
             <img src="img/Group.png" alt="footerlogo" className="footer__logo"/>
               <div className="footer__social">
-              <img src="img/facebook.png" alt="facebook" className=""/>
-              <img src="img/instagram.png" alt="instagram" className=""/>
-              <img src="img/twitter.png" alt="twitter" className=""/>
+              <img src="img/facebook.png" alt="facebook" className="footer__sub"/>
+              <img src="img/instagram.png" alt="instagram" className="footer__sub"/>
+              <img src="img/twitter.png" alt="twitter" className="footer__sub"/>
               </div>
               <p className='copyright'>&copy; Copyright metabnb</p>
             </div>

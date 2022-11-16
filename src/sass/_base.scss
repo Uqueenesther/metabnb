@@ -6,11 +6,25 @@ $font-primary:Red Rose, "sans-serif";
 $font-secondary: Red Rose "sans-serif";
 $font-primary:1.3rem;
 
+$bp-large: 68.75em;  
+// 1100px  
+$bp-small: 56.25;  
+// 900px  
 
 
 html{
     box-sizing: border-box;
     font-size: 50.5%;
+
+    @media only screen and (max-width:$bp-large){
+        font-size: 45%;
+   }
+
+   
+   @media only screen and (max-width:$bp-large){
+    font-size: 40%;
+}
+   
 }
 
 body{
