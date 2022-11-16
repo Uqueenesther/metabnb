@@ -16,7 +16,7 @@ function Modal({ setShowBox }){
         <div className="modal__content">
           <h5>Choose your preferred wallet: </h5>
           <div><input type="text" placeholder="Metamask &#xf105;" className="modal__input1" id=" #myinput"/></div>
-          <div><input type="text" placeholder="Metamask" className="modal__input"/></div>
+          <div><input type="text" placeholder="Connect wallet" className="modal__input"/></div>
         </div> 
       </div> 
     </div>

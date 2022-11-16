@@ -44,7 +44,7 @@ function Home (){
                    <figure className="intro__image intro__item-2"><img src="img/image 4.png" alt="pic" className="intro__image"/></figure>
                    <figure className="intro__image intro__item-3"><img src="img/image 5.png" alt="pic" className="intro__image"/></figure>
                    <figure className="intro__image intro__item-4"><img src="img/image 6.png" alt="pic" className="intro__image"/></figure> 
-                   <img src="img/"/>
+                   {/* <img src="img/Group 4028.png" alt="intro__group"className="intro__group"/> */}
               </section>
             </header>
 

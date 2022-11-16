@@ -14,6 +14,12 @@ $bp-tab: 50em;
 // 800px
 $bp-tab1: 46.875em;
 // 750
+$bp-tab2: 40.875em;
+// 650
+$bp-tab3: 31.875em;
+// 500
+$bp-phone: 28.12;
+// 500
 
 html{
     box-sizing: border-box;
@@ -33,7 +39,17 @@ html{
 }
 
 @media only screen and (max-width:$bp-tab1){
-    font-size: 39%;
+    font-size: 35%;
+}
+
+@media only screen and (max-width:$bp-tab2){
+    font-size: 30%;
+}
+@media only screen and (max-width:$bp-tab3){
+    font-size: 25%;
+}
+@media only screen and (max-width:$bp-phone){
+    font-size: 20%;
 }
    
 }
