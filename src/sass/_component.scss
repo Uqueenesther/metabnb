@@ -417,7 +417,19 @@
              padding: 0px;
              margin-bottom: 6rem;
              margin-top: 12rem;
-            
+             @media only screen and (max-width:$bp-tab3){
+               display: flex;
+               float: left;
+               gap: 3rem;
+   
+              }
+
+              @media only screen and (max-width:$bp-tab3){
+               display: flex;
+               float: left;
+               gap: 1rem;
+   
+              }  
     }
 
     &__link{
@@ -428,6 +440,12 @@
         line-height: 2.5rem;
         letter-spacing: 0em;
         color: #000;
+
+        @media only screen and (max-width:$bp-tab3){
+        
+               
+   
+              }
     }
 
     &__btn{
@@ -447,6 +465,13 @@
        align-items: center;
        padding-left: 2rem;
        
+       @media only screen and (max-width:$bp-tab3){
+         width: 15rem;
+         height: 4rem; 
+         padding-left: 1rem; 
+         font-size: 1.8rem;  
+        }
+
        
       }
 
@@ -456,6 +481,12 @@
          margin-left: 4rem;
          position: absolute;
         
+         @media only screen and (max-width:$bp-tab3){
+            height: 2rem;
+            width: 2rem;
+            margin-left: 2rem;
+            position: absolute;
+           }
       }
    
 }
