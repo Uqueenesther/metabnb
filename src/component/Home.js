@@ -31,7 +31,26 @@ function Home (){
                     
                 </ul>
               </div>
-
+              <nav class="navbar hamburger">
+      <div class="navbar-container container">
+          <input type="checkbox" name="" id=""/>
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+              <li><a href="http://localhost:3000/" className='nav__link '>Home</a></li>
+              <li> <Link to="/signup" className='nav__link '>Place to stay</Link></li>
+              <li><a href="http://localhost:3000/"className='nav__link ' >NFTs</a></li>
+              <li><a href="http://localhost:3000/" className='nav__link '>Community</a></li>
+              <li>  <button onClick={ () => setShowBox(true)} className='buger__btn' > Connect Wallet </button></li>
+              
+          </ul>
+          {/* <h1 class="logo">RS</h1> */}
+      </div>
+  </nav>            
+                  
               <section className="intro">
                <div className="intro__text">
                    <h1 className="heading__1">Rent a place away from home in the Metaverse</h1>
@@ -44,7 +63,7 @@ function Home (){
                    <figure className="intro__image intro__item-2"><img src="img/image 4.png" alt="pic" className="intro__image"/></figure>
                    <figure className="intro__image intro__item-3"><img src="img/image 5.png" alt="pic" className="intro__image"/></figure>
                    <figure className="intro__image intro__item-4"><img src="img/image 6.png" alt="pic" className="intro__image"/></figure> 
-                   {/* <img src="img/Group 4028.png" alt="intro__group"className="intro__group"/> */}
+                   <img src="img/Group 4028.png" alt="intro__group"className="intro__group"/>
               </section>
             </header>
 

@@ -33,6 +33,26 @@ function Signup(){
               </div>
            </div>
 
+           <nav class="navbar">
+      <div class="navbar-container container">
+          <input type="checkbox" name="" id=""/>
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+              <li><a href="http://localhost:3000/" className='nav__link '>Home</a></li>
+              <li> <Link to="/signup" className='nav__link '>Place to stay</Link></li>
+              <li><a href="http://localhost:3000/"className='nav__link ' >NFTs</a></li>
+              <li><a href="http://localhost:3000/" className='nav__link '>Community</a></li>
+              <li>  <button onClick={ () => setShowBox(true)} className='buger__btn' > Connect Wallet </button></li>
+              
+          </ul>
+          {/* <h1 class="logo">RS</h1> */}
+      </div>
+  </nav>         
+
            <section  className="inspo">
             
               <div className="features">
