@@ -524,6 +524,19 @@
          height: 55rem;
          margin: 7rem auto;
          padding: 2rem;
+         @media only screen and (max-width:$bp-tab3){
+            width: 85rem;
+            height: 60rem;
+           }
+
+           @media only screen and (max-width:$bp-tab2){
+            width: 85rem;
+            height: 60rem;
+           }
+           @media only screen and (max-width:$bp-tab1){
+            width: 80rem;
+            height: 60rem;
+           }
         }
         
 
@@ -552,6 +565,10 @@
          margin: 10px auto 1px;
          outline: none;  
          align-items: center;
+         @media only screen and (max-width:$bp-tab3){
+           
+            height: 10rem;
+           }
      }
  }
 
@@ -559,39 +576,46 @@
    background-image: url("../../public/img/image\ 66.png");
    margin-top: 5rem;
    background-position: 4%;
+   @media only screen and (max-width:$bp-tab3){
+      // background-image: url("../../public/img/image\ 66.png");
+      background-size: 30px;
+      
+     }
+
+     @media only screen and (max-width:$bp-tab2){
+      // background-image: url("../../public/img/image\ 66.png");
+      background-size: 30px;
+      
+     }
  }
 
  .wallet{
    background-image: url("../../public/img/image\ 69.png");
    margin-top: 5rem;
    background-position: 4%;
-   
+   @media only screen and (max-width:$bp-tab3){
+      // background-image: url("../../public/img/image\ 66.png");
+      background-size: 30px;
+      
+     }
   
+     @media only screen and (max-width:$bp-tab2){
+      // background-image: url("../../public/img/image\ 66.png");
+      background-size: 30px;
+      
+     }
  }
 
  .modal__input::placeholder{
    padding-left: 18%;  
    }
  
+   .modal__header{
+      border-bottom: .5px solid rgb(194, 191, 191);
+      padding-bottom: 2rem;
+      width: 100%;
+   }
 
-//  .metamaskimg{
-//    //  position: absolute;
-//     z-index: 1;
-//     top: 27rem;
-//     left: 59rem;
-//    //  width: 8rem;
-//    float: right;
-//    position: absolute;
-//  }
-
-//  .wallet{
-//    // position: absolute;
-//    z-index: 1;
-//    top: 38rem;
-//    left: 60rem;
-//    // width: 5rem;
-//    position: absolute;
-// }
 
 
  .closeicon {
@@ -623,4 +647,5 @@
 
  .mh4{
    font-size: 2rem;
+ padding-top: 2rem;
  }

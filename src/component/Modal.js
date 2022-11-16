@@ -6,7 +6,7 @@ function Modal({ setShowBox }){
     <div className="modal">
       <div className="modal__outline">
         <div className="modal__header">
-          <h2 >Connect Wallet</h2>
+          <h2 className="mh2">Connect Wallet</h2>
           <button
             onClick={ () => setShowBox(false)}
          className="modalbtn" > 
