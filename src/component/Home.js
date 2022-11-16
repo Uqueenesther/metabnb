@@ -1,7 +1,12 @@
-import "../App.scss";
+import { React, useState} from "react";
 import { Link } from 'react-router-dom';
 
-function Home( {setShowBox,  handleshowbox}){
+import Modal from "./Modal";
+import "../App.scss";
+
+function Home (){
+  const [showBox, setShowBox] = useState(false)
+
     return(
         <div className="container">
             <header className="header">
@@ -15,9 +20,15 @@ function Home( {setShowBox,  handleshowbox}){
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">NFTs</a></li>
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">Community</a></li>
 
-                     <button  onClick={handleshowbox}
-                     className=' nav__btn'>Connect Wallet</button>
-                    {/* onClick={()=> setShowBox(true) }  */}
+                    <button  
+                      onClick={ () => setShowBox(true)}
+                      className=' nav__btn'
+                    >
+                      Connect Wallet
+                    </button>
+
+                    {showBox && (<Modal setShowBox={setShowBox}/>)}
+                    
                 </ul>
               </div>
 
