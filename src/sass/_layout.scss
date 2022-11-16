@@ -7,9 +7,9 @@
 .header{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    margin-left: 15rem;
-    margin-right: 15rem;
-    // height: 80vh;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  
    
 }
 
@@ -19,8 +19,8 @@
 
 .inspo{
     display: grid;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     grid-template-columns: repeat(10, 1fr);
 }
 
@@ -55,22 +55,3 @@
 }
 
 
-// .framecontainer{
-//     border: 2px solid #A3A3A3 ;
-//     padding: 2rem;
-//     border-radius:2rem ;
-//   }
-  
-//   .mistake{
-//     display: flex;
-//     justify-content: space-between;
-//   }
- 
- 
-//  .starsicon{
-//     max-width: 80%;
-//  }
-//  .frame{
-//     width: 35rem;
-//     height: 35rem;
-//  }

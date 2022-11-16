@@ -138,7 +138,7 @@ function Home (){
 
                   
                   <div className="framecontainer">
-                      <img src="img/frame (1).png" alt="frame1" className="frame"/>
+                      <img src="img/frame (2).png" alt="frame1" className="frame"/>
                       <div className="frame-text">
                         <h5> Desert KIng </h5>
                         <h5>1mbt per night</h5> 
