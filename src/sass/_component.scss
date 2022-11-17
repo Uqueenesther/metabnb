@@ -107,20 +107,20 @@
 
    
 }
-.buger__btn{
+// .buger__btn{
    
-      color: #fff;
-      font-size: 1rem;
-      height: 4rem;
-      width: 10rem;
-      top:0px;
-      font-family: Red Rose;
-      top: 346px;
-      background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
-      border-radius: 10px 10px 10px 10px;
-      border: 1px solid #A3A3A3;
-      cursor: pointer;
-}
+//       color: #fff;
+//       font-size: 1rem;
+//       height: 4rem;
+//       width: 10rem;
+//       top:0px;
+//       font-family: Red Rose;
+//       top: 346px;
+//       background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
+//       border-radius: 10px 10px 10px 10px;
+//       border: 1px solid #A3A3A3;
+//       cursor: pointer;
+// }
 .btn__link{
    
       text-decoration: none;
@@ -180,6 +180,11 @@
    grid-template-columns: repeat(8, 1fr);
    grid-template-rows: repeat(10, 1fr)
 } 
+
+@media only screen and (max-width:$bp-phone){
+  grid-template-columns: repeat(8, 1fr);
+   grid-template-rows: repeat(10, 1fr)
+}
    
 }
 .intro__text{
@@ -196,8 +201,10 @@
    font-size: 2rem;
 }
 @media only screen and (max-width:$bp-tab3){
-   font-size: 1rem;
+   font-size: 3rem;
    grid-column: 1/-1;
+    // text-align: center;
+    
 }
    
    
@@ -216,7 +223,7 @@
    //  letter-spacing: -0.02em;
     text-align: left;
    }
-   @media only screen and (max-width:$bp-tab1){
+   @media only screen and (max-width:$bp-tab2){
       font-size: 3rem;
       font-weight: 500;
     line-height: 3.8rem;
@@ -226,10 +233,10 @@
 
    @media only screen and (max-width:$bp-tab3){
       margin-top: 8rem;
-      font-size: 4rem;
+      font-size: 6rem;
       font-weight: 500;
      line-height: 5.8rem;
-    // letter-spacing: -0.02em;
+    // text-align: center;
    
    }
     
@@ -253,10 +260,10 @@
    @media only screen and (max-width:$bp-tab3){
       margin-top: 2rem;
       margin-bottom: 2rem;
-      font-size: 2rem;
+      font-size: 3rem;
       font-weight: 500;
-    line-height: 3.8rem;
-   //  letter-spacing: -0.02em;
+    line-height: 4.8rem;
+   
    
    }
 
@@ -270,6 +277,17 @@
     font-family: Red Rose;
     border-radius: 5px;
     font-size: 2rem;
+
+    @media only screen and (max-width:$bp-tab3){
+    height: 7rem;
+    width: 98%;
+    left: 0px;
+    border: 1px solid #A3A3A3;
+    // border-right: #fff;
+    font-family: Red Rose;
+    border-radius: 5px;
+    font-size: 2rem;
+   }
  }
  ::placeholder{
    padding-left: 2rem;
@@ -292,29 +310,23 @@
     border-radius: 0px 10px 10px 0px;
     border: 1px solid #A3A3A3;
     cursor: pointer;
+    @media only screen and (max-width:$bp-tab3){
+      height: 7rem;
+      width: 50%;
+      border: 1px solid #A3A3A3;
+      border-radius: 2rem;
+      text-align: center;
+      margin-top: 3rem;
+     
+      
+     }
+    
     
  }
 
  .intro{
-      &__group{
-         display: none;
-
-         @media only screen and (max-width:$bp-tab3){
-            display: grid;
-            width: 80rem;
-            height: 50rem;
-            grid-row: 4/8;
-            grid-column: 3/6;
-            
-         }
-      }
       
     &__image{
-
-      @media only screen and (max-width:$bp-tab3){
-      
-      }
-
        width: 100%;
        height: 100%;
        object-fit: cover;
@@ -331,6 +343,10 @@
         grid-row: 5/ span 2;
      }
 
+     @media only screen and (max-width:$bp-phone){
+      grid-column: 5/span 4;
+      grid-row: 5/ span 2;
+   }
     }
     &__item-1{
       grid-column: 9/span 3;
@@ -340,6 +356,10 @@
         grid-column: 5/span 4;
       grid-row: 7/ span 2;
      }
+     @media only screen and (max-width:$bp-phone){
+      grid-column: 5/span 4;
+      grid-row: 7/ span 2;
+   }
   }
     &__item-2{
         grid-column: 7/span 2;
@@ -350,7 +370,10 @@
         grid-row:6/ span 2;
         
      }
-
+     @media only screen and (max-width:$bp-phone){
+      grid-column: 1/span 4;
+      grid-row: 6/ span 2;
+   }
     }
 
     &__item-4{
@@ -361,6 +384,10 @@
           grid-column: 1/span 4;
           grid-row: 8/ span 2;
        }
+       @media only screen and (max-width:$bp-phone){
+        grid-column: 1/span 4;
+        grid-row: 8/ span 2;
+     }
     }
  }
 

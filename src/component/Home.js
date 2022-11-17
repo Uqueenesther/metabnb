@@ -41,7 +41,7 @@ function Home (){
                     <div className="nav">
                         <div className="nav-wrapper">
                           <nav>
-                          <ul>
+                          <ul className="mb-list">
                             <li><a href="http://localhost:3000/">HOME</a></li>
                             <li><a href="http://localhost:3000/">NFTs</a></li>
                             <li><a href="http://localhost:3000/">PLACE TO STAY</a></li>

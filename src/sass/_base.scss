@@ -18,8 +18,14 @@ $bp-tab2: 40.875em;
 // 650
 $bp-tab3: 35.5em;
 // 500
-$bp-phone: 28.12;
+$bp-phone: 28.12em;
 // 450
+$bp-phone1: 23.12em;
+// 370
+$bp-phone2: 20.12em;
+// 335
+$bp-phone2: 16.12em;
+$bp-phone3: 1.12em;
 
 html{
     box-sizing: border-box;
@@ -49,7 +55,20 @@ html{
     font-size: 29%;
 }
 @media only screen and (max-width:$bp-phone){
-    font-size: 250%;
+    font-size: 25%;
+}
+
+@media only screen and (max-width:$bp-phone1){
+    font-size: 20%;
+}
+@media only screen and (max-width:$bp-phone1){
+    font-size: 18%;
+}
+@media only screen and (max-width:$bp-phone2){
+    font-size: 15%;
+}
+@media only screen and (max-width:$bp-phone3){
+    font-size: 10%;
 }
    
 }
