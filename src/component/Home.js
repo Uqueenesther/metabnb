@@ -12,45 +12,49 @@ function Home (){
             <header className="header">
               <div className="nav"> 
                 <ul className="nav__list">
-                 <div className="image1" ><img src="img/logoicon.png" alt="logoicon" className="logoicon"/>
+                 <div className="image1" >
+                  <div className="logocon">
+                  <img src="img/logoicon.png" alt="logoicon" className="logoicon"/>
                   <img src="img/logo.png" alt="logo" className="logo"/>
+                  </div>
+                  {/* <img src="img/hamburger-menu-icon (1).svg" alt="hambuger" className="ham-icon"/> */}
                  </div> 
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">Home</a></li>
                      <li className="nav__item"><Link to="/signup" className='nav__link '>Place to stay</Link></li>
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">NFTs</a></li>
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">Community</a></li>
 
-                    <button  
-                      onClick={ () => setShowBox(true)}
-                      className=' nav__btn'
-                    >
-                      Connect Wallet
-                    </button>
-
-                    {showBox && (<Modal setShowBox={setShowBox}/>)}
+                    <button onClick={ () => setShowBox(true)} className=' nav__btn'> Connect Wallet </button>
+                     {showBox && (<Modal setShowBox={setShowBox}/>)}
                     
                 </ul>
-              </div>
-              <nav class="navbar hamburger">
-      <div class="navbar-container container">
-          <input type="checkbox" name="" id=""/>
-          <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-          </div>
-          <ul class="menu-items">
-              <li><a href="http://localhost:3000/" className='nav__link '>Home</a></li>
-              <li> <Link to="/signup" className='nav__link '>Place to stay</Link></li>
-              <li><a href="http://localhost:3000/"className='nav__link ' >NFTs</a></li>
-              <li><a href="http://localhost:3000/" className='nav__link '>Community</a></li>
-              <li>  <button onClick={ () => setShowBox(true)} className='buger__btn' > Connect Wallet </button></li>
-              
-          </ul>
-          {/* <h1 class="logo">RS</h1> */}
-      </div>
-  </nav>            
-                  
+               </div>
+                {/* MOBILE NAV */}
+
+                <div className="hamburger1">
+                <input id="toggle" type="checkbox"></input>
+
+                <label for="toggle" className="hamburger">
+                  <div className="top-bun"></div>
+                  <div className="meat"></div>
+                  <div className="bottom-bun"></div>
+                </label>
+                    <div className="nav">
+                        <div className="nav-wrapper">
+                          <nav>
+                          <ul>
+                            <li><a href="http://localhost:3000/">HOME</a></li>
+                            <li><a href="http://localhost:3000/">NFTs</a></li>
+                            <li><a href="http://localhost:3000/">PLACE TO STAY</a></li>
+                            <li><a href="http://localhost:3000/">COMMUNITY</a></li>
+                            <button onClick={ () => setShowBox(true)} className=' mb-btn'>Connect Wallet</button> 
+                          </ul>
+                          </nav>
+                           
+                        </div> 
+                  </div>
+                </div>
+
               <section className="intro">
                <div className="intro__text">
                    <h1 className="heading__1">Rent a place away from home in the Metaverse</h1>
@@ -63,8 +67,10 @@ function Home (){
                    <figure className="intro__image intro__item-2"><img src="img/image 4.png" alt="pic" className="intro__image"/></figure>
                    <figure className="intro__image intro__item-3"><img src="img/image 5.png" alt="pic" className="intro__image"/></figure>
                    <figure className="intro__image intro__item-4"><img src="img/image 6.png" alt="pic" className="intro__image"/></figure> 
-                   <img src="img/Group 4028.png" alt="intro__group"className="intro__group"/>
+                   {/* <img src="img/Group 4028.png" alt="intro__group"className="intro__group"/> */}
               </section>
+
+            
             </header>
 
             <div className="purple__frame">

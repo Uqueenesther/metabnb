@@ -7,9 +7,13 @@ function Signup(){
            <div className="header">
            <div className="nav"> 
                 <ul className="nav__list">
-                 <figure className="image1" ><img src="img/logoicon.png" alt="logoicon" className="logoicon"/>
-                 <img src="img/logo.png" alt="logo" className="logo"/>
-                 </figure> 
+                <div className="image1" >
+                  <div className="logocon">
+                  <img src="img/logoicon.png" alt="logoicon" className="logoicon"/>
+                  <img src="img/logo.png" alt="logo" className="logo"/>
+                  </div>
+                  {/* <img src="img/hamburger-menu-icon (1).svg" alt="hambuger" className="ham-icon"/> */}
+                 </div>
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">Home</a></li>
                      <li className="nav__item"><a href="http://localhost:3000/"className="nav__link">Place to stay</a></li>
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">NFTs</a></li>
@@ -31,27 +35,37 @@ function Signup(){
                      <button className="place__btn">Location<img src="img/setting-5.svg" alt="location" className="place__icon"/></button>
                 </ul>
               </div>
+
+               {/* MOBILE NAV */}
+
+               <div className="hamburger1">
+                <input id="toggle" type="checkbox"></input>
+
+                <label for="toggle" className="hamburger">
+                  <div className="top-bun"></div>
+                  <div className="meat"></div>
+                  <div className="bottom-bun"></div>
+                </label>
+                    <div className="nav">
+                        <div className="nav-wrapper">
+                          <nav>
+                          <ul>
+                            <li><a href="http://localhost:3000/">HOME</a></li>
+                            <li><a href="http://localhost:3000/">NFTs</a></li>
+                            <li><a href="http://localhost:3000/">PLACE TO STAY</a></li>
+                            <li><a href="http://localhost:3000/">COMMUNITY</a></li>
+                            <button onClick={ () => setShowBox(true)} className=' mb-btn'>Connect Wallet</button> 
+                          </ul>
+                          </nav>
+                           
+                        </div> 
+                  </div>
+                </div>
+
+                  
            </div>
 
-           <nav class="navbar">
-      <div class="navbar-container container">
-          <input type="checkbox" name="" id=""/>
-          <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-          </div>
-          <ul class="menu-items">
-              <li><a href="http://localhost:3000/" className='nav__link '>Home</a></li>
-              <li> <Link to="/signup" className='nav__link '>Place to stay</Link></li>
-              <li><a href="http://localhost:3000/"className='nav__link ' >NFTs</a></li>
-              <li><a href="http://localhost:3000/" className='nav__link '>Community</a></li>
-              <li>  <button onClick={ () => setShowBox(true)} className='buger__btn' > Connect Wallet </button></li>
-              
-          </ul>
-          {/* <h1 class="logo">RS</h1> */}
-      </div>
-  </nav>         
+         
 
            <section  className="inspo">
             
