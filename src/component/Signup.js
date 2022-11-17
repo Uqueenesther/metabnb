@@ -2,6 +2,8 @@ import "../App.scss";
 import { Link } from 'react-router-dom';
 
 function Signup(){
+  const [showBox, setShowBox] = useState(false)
+  
     return (
         <div className="container">
            <div className="header">
@@ -19,6 +21,7 @@ function Signup(){
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">NFTs</a></li>
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">Community</a></li>
                      <button className=' nav__btn'><Link to="/signup" className='btn__link '>Connect Wallet</Link> </button>
+                     {showBox && (<Modal setShowBox={setShowBox}/>)}
                 </ul>
               </div>
                
