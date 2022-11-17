@@ -495,10 +495,23 @@
    @media only screen and (max-width:$bp-small){
     // display: block;
    
-   
   
+}   
+@media only screen and (max-width:$bp-tab3){
+  display: block;
+  // float: left;
+  margin-left: 0px;
+  padding-left: 2rem;
+
+
+ 
+
 }
-   
+.fth4{
+  font-size: 1.8rem;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+} 
 
    &__sub{
 
@@ -534,6 +547,12 @@
         
        
     }
+    @media only screen and (max-width:$bp-tab3){
+       display: grid; 
+       padding-left: 8rem;
+       gap: 2rem;
+       margin-top: 5rem;
+     }
    }
 }
 
@@ -554,6 +573,9 @@
 .footer__logo{
    @media only screen and (max-width:$bp-small){
   width: 15rem;    
+ }
+ @media only screen and (max-width:$bp-small){
+      
  }
 }
 

@@ -1,6 +1,5 @@
 import { React, useState} from "react";
 import { Link } from 'react-router-dom';
-
 import Modal from "./Modal";
 import "../App.scss";
 
@@ -267,12 +266,12 @@ function Home (){
               <img src="img/instagram.png" alt="instagram" className="footer__sub"/>
               <img src="img/twitter.png" alt="twitter" className="footer__sub"/>
               </div>
-              <p className='copyright'>&copy; Copyright metabnb</p>
+            
             </div>
 
             <div>
               <ul className="footer__list">
-             <h4>Community</h4>
+             <h4 className="fth4">Community</h4>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">NFT</a> </li>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Tokens</a></li>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Landlords</a></li>
@@ -282,7 +281,7 @@ function Home (){
 
             <div>
               <ul className="footer__list">
-             <h4>Places</h4>
+             <h4 className="fth4" >Places</h4>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Castle</a> </li>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Farms</a></li>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Beach</a></li>
@@ -292,12 +291,14 @@ function Home (){
 
             <div>
               <ul className="footer__list">
-              <h4>About us</h4>
+              <h4 className="fth4">About us</h4>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Road map</a></li>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Creators</a></li>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Career</a></li>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Contact us</a></li>
+              <p className='copyright'>&copy; Copyright metabnb</p> 
               </ul>
+              
             </div>
         </footer>
         </div>

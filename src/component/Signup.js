@@ -1,9 +1,11 @@
 import "../App.scss";
 import { Link } from 'react-router-dom';
+import Modal from "./Modal";
+import { React, useState} from "react";
 
 function Signup(){
   const [showBox, setShowBox] = useState(false)
-  
+
     return (
         <div className="container">
            <div className="header">
