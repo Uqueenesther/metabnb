@@ -42,10 +42,10 @@ function Home (){
                         <div className="nav-wrapper">
                           <nav>
                           <ul className="mb-list">
-                            <li><a href="http://localhost:3000/">HOME</a></li>
-                            <li><a href="http://localhost:3000/">NFTs</a></li>
-                            <li><a href="http://localhost:3000/">PLACE TO STAY</a></li>
-                            <li><a href="http://localhost:3000/">COMMUNITY</a></li>
+                            <li className="mb-items"><a href="http://localhost:3000/" className="mb-link">HOME</a></li>
+                            <li className="mb-items"><a href="http://localhost:3000/" className="mb-link">NFTs</a></li>
+                            <li className="mb-items"><Link to="/signup" className='nav__link '>PLACE TO STAY</Link></li>
+                            <li className="mb-items"><a href="http://localhost:3000/" className="mb-link">COMMUNITY</a></li>
                             <button onClick={ () => setShowBox(true)} className=' mb-btn'>Connect Wallet</button> 
                           </ul>
                           </nav>

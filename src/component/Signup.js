@@ -19,10 +19,10 @@ function Signup(){
                   {/* <img src="img/hamburger-menu-icon (1).svg" alt="hambuger" className="ham-icon"/> */}
                  </div>
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">Home</a></li>
-                     <li className="nav__item"><a href="http://localhost:3000/"className="nav__link">Place to stay</a></li>
+                     <li className="nav__item"><Link to="/signup" className='nav__link '>Place to stay</Link></li>
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">NFTs</a></li>
                      <li className="nav__item"><a href="http://localhost:3000/" className="nav__link">Community</a></li>
-                     <button className=' nav__btn'><Link to="/signup" className='btn__link '>Connect Wallet</Link> </button>
+                     <button onClick={ () => setShowBox(true)} className=' nav__btn'> Connect Wallet </button>
                      {showBox && (<Modal setShowBox={setShowBox}/>)}
                 </ul>
               </div>
@@ -54,7 +54,7 @@ function Signup(){
                     <div className="nav">
                         <div className="nav-wrapper">
                           <nav>
-                          <ul>
+                          <ul className="mb-list">
                             <li><a href="http://localhost:3000/">HOME</a></li>
                             <li><a href="http://localhost:3000/">NFTs</a></li>
                             <li><a href="http://localhost:3000/">PLACE TO STAY</a></li>
@@ -392,16 +392,16 @@ function Signup(){
             <div className="footer__contact" >
             <img src="img/Group.png" alt="footerlogo" className="footer__logo"/>
               <div className="footer__social">
-              <img src="img/facebook.png" alt="facebook" className=""/>
-              <img src="img/instagram.png" alt="instagram" className=""/>
-              <img src="img/twitter.png" alt="twitter" className=""/>
+              <img src="img/facebook.png" alt="facebook" className="footer__sub"/>
+              <img src="img/instagram.png" alt="instagram" className="footer__sub"/>
+              <img src="img/twitter.png" alt="twitter" className="footer__sub"/>
               </div>
-              <p className='copyright'>&copy; Copyright metabnb</p>
+            
             </div>
 
             <div>
               <ul className="footer__list">
-             <h4>Community</h4>
+             <h4 className="fth4">Community</h4>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">NFT</a> </li>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Tokens</a></li>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Landlords</a></li>
@@ -411,7 +411,7 @@ function Signup(){
 
             <div>
               <ul className="footer__list">
-             <h4>Places</h4>
+             <h4 className="fth4" >Places</h4>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Castle</a> </li>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Farms</a></li>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Beach</a></li>
@@ -421,12 +421,14 @@ function Signup(){
 
             <div>
               <ul className="footer__list">
-              <h4>About us</h4>
+              <h4 className="fth4">About us</h4>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Road map</a></li>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Creators</a></li>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Career</a></li>
               <li className="list__item"><a href="http://localhost:3000/" className="footer__link">Contact us</a></li>
+              <p className='copyright'>&copy; Copyright metabnb</p> 
               </ul>
+              
             </div>
         </footer>
         </div>

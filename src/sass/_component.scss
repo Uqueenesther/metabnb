@@ -526,13 +526,17 @@
 }   
 @media only screen and (max-width:$bp-tab3){
   display: block;
-  // float: left;
+ align-items: center;
+ text-align: center;
   margin-left: 0px;
   padding-left: 2rem;
+}
 
-
- 
-
+&__contact{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8rem;
 }
 .fth4{
   font-size: 1.8rem;
@@ -576,7 +580,8 @@
     }
     @media only screen and (max-width:$bp-tab3){
        display: grid; 
-       padding-left: 8rem;
+       align-items: center;
+       padding-left: 10rem;
        gap: 2rem;
        margin-top: 5rem;
      }
@@ -601,8 +606,8 @@
    @media only screen and (max-width:$bp-small){
   width: 15rem;    
  }
- @media only screen and (max-width:$bp-small){
-      
+ @media only screen and (max-width:$bp-tab3){
+       padding-left: 5rem;
  }
 }
 
@@ -843,7 +848,7 @@
    align-items: center;
    
  }
-
+// ////////////////////////////MOBILE NAV
  .mh4{
    font-size: 2rem;
  padding-top: 2rem;
@@ -865,13 +870,10 @@ body {
   padding: 0;
   margin: 0;
 }
-h1 {
-  text-align: center;
-  letter-spacing: 1px;
-  word-spacing: 0.15em;
-  font-size: 3em;
-  line-height: 1.2;
-  transform: translateY(52%);
+.mb-list{
+  list-style: none;
+  padding-left: 0px;
+  
 }
 
 
